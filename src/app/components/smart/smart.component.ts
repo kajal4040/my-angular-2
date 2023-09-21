@@ -6,11 +6,17 @@ import { SharedService } from 'src/app/shared/shared.service';
   templateUrl: './smart.component.html',
   styleUrls: ['./smart.component.scss']
 })
+
 export class SmartComponent implements OnInit {
-users: any[] | any;
-constructor(private service: SharedService) {}
-ngOnInit(): void {
-  this.service.getUsers().subscribe((data) => {
-    this.users = data;
-  });}
+  smartData: any;
+
+  constructor(private service: SharedService) { }
+
+  ngOnInit(): void {
+
+    this.service.getUsers().subscribe((data: any) => {
+      this.smartData = data;
+    });
+  }
 }
+

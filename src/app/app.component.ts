@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  ngOnInit() {
+    // throw new Error("Method not implemented.");
+  }
   title = 'my-angular-2';
 }

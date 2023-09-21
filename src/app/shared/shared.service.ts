@@ -11,6 +11,6 @@ export class SharedService {
     
    }
    getUsers() {
-    return this.http.get<any[]>('https://api.example.com/users');
+    return this.http.get<any>('/assets/data.json');
   }
 }

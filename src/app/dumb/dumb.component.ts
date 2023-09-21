@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./dumb.component.scss']
 })
 export class DumbComponent {
-@Input() users: any[] | any;
+  @Input() dumbData: any; // Define an input property to receive data
+  constructor() {}
 }

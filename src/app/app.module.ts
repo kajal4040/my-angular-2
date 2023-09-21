@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SmartComponent } from './components/smart/smart.component';
-import { DumbComponent } from './components/dumb/dumb.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DumbComponent } from './dumb/dumb.component';
 
 @NgModule({
   declarations: [
